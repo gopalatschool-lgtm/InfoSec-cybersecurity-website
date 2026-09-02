@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 88px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.hero-network {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.hero-network svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-network-lines line {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.hero-network-nodes circle {
+  fill: var(--accent);
+  opacity: 0.7;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 700px;
+}
+
+.hero-kicker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 22px;
+  opacity: 0;
+  animation: hero-rise 0.6s ease forwards;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 1.9rem + 3vw, 4.2rem);
+  color: var(--text);
+  letter-spacing: -0.02em;
+  opacity: 0;
+  animation: hero-rise 0.6s ease 0.08s forwards;
+}
+
+.hero-subtitle {
+  margin-top: 18px;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 500;
+  opacity: 0;
+  animation: hero-rise 0.6s ease 0.16s forwards;
+}
+
+.hero-message {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  max-width: 54ch;
+  opacity: 0;
+  animation: hero-rise 0.6s ease 0.24s forwards;
+}
+
+.hero-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 28px;
+  padding: 10px 16px;
+  border: 1px solid var(--accent-dim);
+  background: var(--accent-wash);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+  opacity: 0;
+  animation: hero-rise 0.6s ease 0.32s forwards;
+}
+
+.hero-highlight-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ok);
+  flex-shrink: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: hero-rise 0.6s ease 0.4s forwards;
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-kicker,
+  .hero-title,
+  .hero-subtitle,
+  .hero-message,
+  .hero-highlight,
+  .hero-actions {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 72px 0 56px;
+  }
+}

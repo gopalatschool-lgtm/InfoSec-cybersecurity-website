@@ -1,0 +1,38 @@
+.resource-card {
+  position: relative;
+  display: block;
+  padding: 20px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+}
+
+a.resource-card--link {
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+a.resource-card--link:hover {
+  border-color: var(--accent-dim);
+  background: var(--bg-raised-2);
+}
+
+.resource-card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 6px;
+  padding-right: 20px;
+}
+
+.resource-card-desc {
+  font-size: 0.86rem;
+  margin: 0;
+}
+
+.resource-card-arrow {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: var(--accent);
+  font-size: 0.9rem;
+}
