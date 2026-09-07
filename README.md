@@ -1,6 +1,6 @@
 # InfoSec @ UNCG — Club Website
 
-The official website for **InfoSec**, the cybersecurity student club at UNC Greensboro. Built with React, Vite, and plain CSS. No backend, no database — fully static and ready for GitHub Pages.
+The official website for **InfoSec**. Built with React, Vite, and plain CSS.
 
 ## Tech stack
 
@@ -9,50 +9,7 @@ The official website for **InfoSec**, the cybersecurity student club at UNC Gree
 - React Router (`HashRouter`, so routing works on GitHub Pages without extra server config)
 - Plain CSS (no framework)
 
-## Getting started
 
-### 1. Install dependencies
-
-```bash
-npm install
-```
-
-### 2. Run locally
-
-```bash
-npm run dev
-```
-
-This starts a local dev server (usually at `http://localhost:5173`) with hot reload.
-
-### 3. Build for production
-
-```bash
-npm run build
-```
-
-This outputs a static, production-ready site to the `dist/` folder.
-
-### 4. Preview the production build locally
-
-```bash
-npm run preview
-```
-
-## Deploying to GitHub Pages
-
-This repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys the site whenever you push to `main`.
-
-To enable it:
-
-1. Push this repo to GitHub.
-2. In the repo, go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-4. Push to `main` (or run the workflow manually from the **Actions** tab).
-
-The site will be published at `https://<your-username>.github.io/<repo-name>/`. Because `vite.config.js` uses a relative base path (`base: './'`), no further configuration is needed regardless of the repository name.
-
-If you'd rather deploy manually without Actions, run `npm run build` and publish the contents of `dist/` to your `gh-pages` branch or hosting provider of choice.
 
 ## Project structure
 
@@ -64,9 +21,7 @@ src/
   styles/         Global design tokens and shared button styles
 ```
 
-## Updating content
 
-The site is intentionally split so non-technical club members can update most things by editing a single file, without needing to touch any component code.
 
 ### Leadership — `src/data/leadership.js`
 
