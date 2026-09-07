@@ -3,11 +3,11 @@ import FeatureCard from '../components/FeatureCard'
 import './About.css'
 
 const goals = [
-  { title: 'Learn cybersecurity', description: 'Build a working understanding of security concepts together, regardless of starting point.' },
-  { title: 'Connect with other students', description: 'Meet other students who are curious about security and want to learn alongside others.' },
+  { title: 'Learn cybersecurity', description: 'Build a working understanding of cybersecurity concepts together, regardless of starting point.' },
+  { title: 'Connect with other students', description: 'Meet other students who are curious about cybersecurity and want to learn alongside others.' },
   { title: 'Explore CTF challenges', description: 'Practice with capture-the-flag exercises in a low-pressure, collaborative setting.' },
   { title: 'Build technical skills together', description: 'Work through tools and techniques as a group rather than alone.' },
-  { title: 'Have career discussions', description: 'Talk through certifications, internships, and what a security career can look like.' },
+  { title: 'Have career discussions', description: 'Talk through certifications, internships, and what a cybersecurity career can look like.' },
   
 ]
 
