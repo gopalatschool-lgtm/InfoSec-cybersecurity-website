@@ -38,16 +38,7 @@ const whatWeDo = [
       </svg>
     ),
   },
-  {
-    title: 'Compete',
-    description: 'Take part in cybersecurity competitions as a club, from local events to larger circuits.',
-    icon: (
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.6">
-        <path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4Z" strokeLinejoin="round" strokeLinecap="round" />
-        <path d="M7 6H4a3 3 0 0 0 3 5M17 6h3a3 3 0 0 1-3 5" strokeLinecap="round" />
-      </svg>
-    ),
-  },
+  
   {
     title: 'Career discussions',
     description: 'Talk through certifications, internships, and career paths with people further along theirs.',
@@ -58,16 +49,7 @@ const whatWeDo = [
       </svg>
     ),
   },
-  {
-    title: 'Explore research',
-    description: 'Dig into current security research and share what you find with the rest of the club.',
-    icon: (
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.6">
-        <circle cx="10.5" cy="10.5" r="6" />
-        <path d="M20 20l-4.8-4.8" strokeLinecap="round" />
-      </svg>
-    ),
-  },
+
 ]
 
 export default function Home() {

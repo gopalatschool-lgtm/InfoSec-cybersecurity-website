@@ -7,9 +7,8 @@ const goals = [
   { title: 'Connect with other students', description: 'Meet other students who are curious about security and want to learn alongside others.' },
   { title: 'Explore CTF challenges', description: 'Practice with capture-the-flag exercises in a low-pressure, collaborative setting.' },
   { title: 'Build technical skills together', description: 'Work through tools and techniques as a group rather than alone.' },
-  { title: 'Participate in competitions', description: 'Take on cybersecurity competitions as a club.' },
   { title: 'Have career discussions', description: 'Talk through certifications, internships, and what a security career can look like.' },
-  { title: 'Explore cybersecurity research', description: 'Look at current research and share what stands out with the club.' },
+  
 ]
 
 export default function About() {
